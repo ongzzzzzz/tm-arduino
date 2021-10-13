@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>TM Arduino</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+	<script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+</head>
+
+<body>
+
+	<div id="selection-container">
+		<div id="model-container">
+			<label for="model">Model link</label>
+			<input id="model-inp" name="model" placeholder="Your model's link..."></input>
+			<button id="model-btn">Get model</button>
+		</div>
+
+		<div id="port-container">
+			<label for="port">Select a device</label>
+			<select id="port-sel" name="port">Select a device</select>
+			<br />
+			<button id="scan-btn">Add another device</button>
+			<button id="port-btn">Connect!</button>
+		</div>
+	</div>
+
+	<br />
+
+	<script src="utils.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
